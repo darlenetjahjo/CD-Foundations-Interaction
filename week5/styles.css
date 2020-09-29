@@ -1,0 +1,114 @@
+html, body 
+
+#title h1 {
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	position: relative;
+	color: #f71300;
+	padding-block-end: 5%;
+	background-color: orange;
+}
+
+#title img {
+	width: 100%;
+}
+
+#verse1 p {
+  	font-family: 'Permanent Marker', cursive;
+	text-align: left;
+	color: #006dee;
+	margin: 2% 5%;
+    font-size: 28px;
+    position: relative;
+    top: 70px;
+}
+
+#chorus1 h2{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 120px;
+	text-align: center;
+	position: relative;
+	color: #8C30FF;
+	opacity: 60%;
+	margin: 0%;
+    top: 500px;
+}
+
+#chorus1 h3{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 90px;
+    text-align: center;
+    position: relative;
+    color: #f71300;
+    opacity: 60%;
+    top: 498px;
+    line-height: 0.2px;
+    margin: 0%;
+}
+
+#verse2 p {
+  	font-family: 'Permanent Marker', cursive;
+	text-align: right;
+	color: #00a562;
+	margin: 2% 5%;
+    font-size: 20px;
+    position: relative;
+    top: 500px;
+}
+
+#chorus2 h2{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 120px;
+	text-align: center;
+	position: relative;
+	color: #0eadff;
+	opacity: 60%;
+	margin: 0%;
+    top: 800px;
+    transform: rotate(90deg);
+}
+
+#chorus2 h3 {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 150px;
+    text-align: center;
+    position: relative;
+    color: #ffe62d;
+    opacity: 60%;
+    top: 600px;
+    line-height: 600px;
+    margin: 0%;
+}
+
+#verse3 p{
+	font-family: 'Pacifico', cursive;
+	color: #0eadff;
+	position: relative;
+	top: 350px
+}
+
+#chorus3 h2{
+	font-family: 'Pacifico', cursive;
+	font-size: 100px;
+	text-align: right;
+	position: relative;
+	color: #00923c;
+	opacity: 60%;
+	margin: 0%;
+    top: 700px;
+}
+
+#chorus3 h3 {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 60px;
+    text-align: left;
+    position: relative;
+    opacity: 60%;
+    color: #8C30FF;
+    top: 700px;
+    margin: 0%;
+    text-indent: 30pt
+}
+
+
+
