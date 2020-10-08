@@ -1,0 +1,49 @@
+html, body
+
+body{
+font-family: 'Playfair Display', serif;
+}
+
+h1{
+    font-size: 400%;
+    position: relative;
+    left: 150px;
+    top: 100px;
+}
+
+h2{
+	position: relative;
+    left: 250px;
+    top: 60px;
+    font-size: 400%;
+    z-index: 100
+}
+
+h3{
+	position: relative;
+    left: 350px;
+    top: 20px;
+    font-size: 400%;
+    z-index: 100
+}
+
+p {
+	position: absolute;
+    top: 40%;
+    left: 8%;
+    z-index: 20;
+    padding-top: 24%;
+    padding-right: 60%;
+    margin: 0%;
+    text-align: left;
+    font-size: 15px;
+}
+
+iframe{
+	position: relative;
+    left: 40%;
+    bottom: 400px;
+    width: 900px;
+    height: 800px;
+    z-index: 1
+}
