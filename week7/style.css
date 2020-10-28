@@ -1,0 +1,209 @@
+html, body {
+	font-family: 'Righteous', cursive;
+	font-family: 'Pacifico', cursive;
+	background-color: #D3EAF0;
+}
+
+.navbar {
+  background-color: #321906;
+  align-items: center
+}
+
+/*#navigation-container {
+  width: 10px;
+  margin: 0 ;
+  height: 10px;
+  position: fixed;
+}
+*/
+/*.dropdown {
+  float: center;
+  overflow: hidden;
+}*/
+
+ .down img {
+ 	width: 20px;
+ 	position: fixed;
+ 	top: 2%;
+ 	left: 48%;
+ }
+
+
+.dropbutton {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit; 
+  margin: 0; 
+}
+
+/*.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+}*/
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #321906;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 200;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+}
+
+.content h2 {
+	font-size: 50px;
+	font-family: 'Righteous', cursive;
+	float: none;
+  color: white;
+  padding: 0px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.content h2:hover {
+	color:yellow;
+}
+
+.arrow svg{
+  width: 20px;
+  position: absolute;
+  left: 90%;
+  top: 0%;
+}
+
+h1 {
+	font-size: 90px;
+  font-weight: normal;
+	padding: 0%;
+  margin: 0%;
+	font-family: 'Pacifico', cursive;
+	color: #F1403B;
+	z-index: 100;
+  text-align: center;
+  position: relative;
+}
+
+.sticky h1{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 20rem;
+}
+
+.sticky {
+  position: relative;
+  top: 600px;
+  display: flex;
+  height: 850px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#chocochip img {
+    width: 450px;
+    position: absolute;
+    left: 34%;
+    top: 26%;
+    z-index: 1;
+}
+
+#butter img {
+    width: 220px;
+    position: absolute;
+    top: 118%;
+    left: 40%;
+    z-index: 1;
+}
+
+#sugar img {
+	width: 360px;
+    position: absolute;
+    top: 180%;
+    left: 35%;
+    padding: 0%;
+    margin: 0%;
+    z-index: 1;
+}
+
+#half img {
+    width: 415px;
+    position: absolute;
+    left: 65%;
+    top: 120%;
+    z-index: 1;
+}
+
+#jam img {
+	width: 380px;
+    position: absolute;
+    left: 3%;
+    top: 180%;
+    z-index: 1;
+}
+
+/*#circle img {
+  width: 350px;
+    position: absolute;
+    left: 3%;
+    top: 177%;
+    z-index: -1;
+}*/
+
+#jam:hover img {
+  background: url(assets/winner.svg) no-repeat; 
+  background-size: 300px;
+  background-position: center;
+  display: inline-block;
+}
+
+
+
+#lemon img {
+	  width: 350px;
+    position: absolute;
+    left: 3%;
+    top: 120%;
+    padding: 0%;
+    margin: 0%;
+    z-index: 1;
+}
+
+#macaroon img {
+	width: 330px;
+    position: absolute;
+    left: 68%;
+    top: 180%;
+    padding: 0%;
+    margin: 0%;
+    z-index: 1;
+}
+
+.rotate img:hover {
+	transform: rotate(10deg);
+}
+
+.blur img:hover{
+ 	filter: blur(5px);
+}
+
+
+.arrow path:hover{
+  fill:yellow ;
+}
+
