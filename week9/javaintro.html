@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo Javascript</title>
+	<script type="text/javascript" src='main.js'></script>
+</head>
+<style type="text/css">
+#shapeshifter {
+		background-color: blue;
+		color: white;
+	}
+	
+#title {
+	font-size: 50px;
+	color: blue;
+}
+
+
+html,body {
+	text-align:middle;
+	font-family: Futura, sans-serif;
+	background-color: lightyellow;
+}
+
+input, div{
+	margin:2%;
+}
+
+</style>
+<body>
+
+<div id="title">QUIZ!</div>
+
+<input placeholder="What's your nationality?" type="text" name="name">
+<div id="welcome">2</div>
+<div id="shapeshifter">3</div>
+<input placeholder="Are you a robot?" type="text" name="guess">
+<div id="result">5</div>
+
+</body>
+
+<script>
+	
+let name = document.querySelector('input[name="name"]')
+let welcome = document.querySelector('#welcome')
+let shapeshifter = document.querySelector('#shapeshifter')
+let guess = document.querySelector('input[name="guess"]')
+let result = document.querySelector ('#result')
+
+console.log(name)
+console.log(welcome)
+console.log(shapeshifter)
+console.log(guess)
+console.log(result)
+
+name.onchange=function(){
+	welcome.innerHTML='Hello fellow ' + name.value
+}
+
+shapeshifter.onclick=function(){
+	if (shapeshifter.style.backgroundColor=='blue'){shapeshifter.style.backgroundColor='red'} else {
+		shapeshifter.style.backgroundColor='blue'
+	}
+}
+
+shapeshifter.onmouseover=function()
+{
+	shapeshifter.innerHTML='there is no point to this quiz lol'
+	shapeshifter.style.width='7em'
+}
+
+shapeshifter.onmouseout=function(){
+	shapeshifter.innerHTML='3'
+	shapeshifter.style.width='1em'
+}
+
+guess.onchange=function(){
+	if (guess.value=='yes') {
+		result.innerHTML="YIKES"
+	} else {
+		result.innerHTML="Basic"
+	}
+}
+
+
+</script>
+
+</html>

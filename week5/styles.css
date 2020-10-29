@@ -1,12 +1,14 @@
 html, body 
 
+
+
 #title h1 {
 	font-family: 'Pacifico', cursive;
 	text-align: center;
 	position: relative;
 	color: #f71300;
 	padding-block-end: 5%;
-	background-color: orange;
+	background: orange
 }
 
 #title img {
@@ -82,7 +84,7 @@ html, body
 
 #verse3 p{
 	font-family: 'Pacifico', cursive;
-	color: #0eadff;
+	color: #f71300;
 	position: relative;
 	top: 350px
 }

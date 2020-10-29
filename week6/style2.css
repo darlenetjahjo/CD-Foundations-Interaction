@@ -8,7 +8,7 @@ html, body {
 }
 
 
-.navbar li {
+#navbar button {
   position: fixed;
   margin: 0%;
   top: 0;
@@ -28,7 +28,7 @@ html, body {
 }
 
 
-li {
+button {
   list-style-type: none;
   margin: 0%;
   padding: 0%;
