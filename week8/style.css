@@ -31,6 +31,7 @@ p{
 	left: 60%;
 	top: 75%;
 	padding-right:5%;
+	margin:0%;
 }
 
 .image img{
@@ -40,29 +41,38 @@ p{
 	top: 40%;
 }
 
-@media screen and (max-width:690px){
+@media screen and (max-width:400px){
 		.image img{
-			width:auto;
+			position: absolute;
+			width:113%;
 			height:auto;
 
 		}
 		
+		nav img{
+			width: 15%;
+			height: auto;
+			position: absolute;
+			left: 110%;
+			top: 5%;
+		}
+
 		h1 {
 			width:auto;
 			height:auto;
 			font-size: 90px;
 			position: absolute;
-			left: 21%;
+			left: 15%;
 			top: 20%;
 		}
 
 		p{
-			font-size: 20px;
-			padding-right: 10%;
-			width: auto;
+			font-size: 22px;
+			/*padding-right: 0%;*/
+			width: 120%;
 			height:auto;
 			position: absolute;
-			top: 1000px;
+			top: 950px;
 			left:10%;
 		}
 	}
