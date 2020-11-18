@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Realization</title>
+	<meta name="viewport" content="width=device-width">
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+ 
+<div class="one">
+	<lottie-player id="stars" src="https://assets10.lottiefiles.com/packages/lf20_iomkzwwh.json"  background="transparent"  speed="1"  style="width: 1300px; height: auto;" autoplay loop  ></lottie-player>
+	<h2>Somehow he sensed that it was his duty to leave all these things behind ; now he belonged to this new
+world, removed from past, present, and future. Little by little this new world surrounded him.</h2>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet"></div>
+
+<div class="two">
+	<h2 id="para">He suffered many agonies, <h2 id="button">journeyed</h2> <h2 id="para2">through realms of desperation and loneliness‐appalling peregrinations, for they transcended all his previous perceptions, memories , and hopes. </h2>
+	</div>
+</div>
+
+<div class="three"><h2>All horror lay in their newness and their splendor. He had deserved grace‐he had earned it; every second since the moment of his death, he had been in heaven.</h2></div>
+
+<div class="end">
+	<div id="heaven"><h2>Heaven [hev-uhn]</h2></div>
+	<div id="def"><p>The abode of God, the angels, and the spirits of the righteous after death; the place or state of existence of the blessed after the mortal life</p></div>
+</div>
+
+
+<!-- gallery -->
+
+<div class="gallery">
+	<iframe src="https://giphy.com/embed/3o7btQ7dh9a6KC2cUM" width="480" height="270" frameBorder="0" id="gif" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/travel-epic-walk-3o7btQ7dh9a6KC2cUM"></a></p>
+	<div id="cloud"><img src="assets/cloud.png"></div>
+	<div id="moon"><img src="assets/moon.svg"></div>
+	<div id="hourglass"><img src="assets/hourglass.png"></div>
+	<div id="stopwatch"><img src="assets/stopwatch.png"></div>
+
+</div>
+
+</body>
+
+<style type="text/css">
+	
+html,	body{
+	background-image: linear-gradient(#748CAB, #F0EBD8);
+	top:0;
+	left:0;
+	margin:0;
+	height:180%;
+	overflow-x: hidden;
+	overflow-y: initial;
+	display: flex;
+}
+
+
+
+h2{
+	font-size: 30px;
+	font-family: 'Crimson Text', serif;
+	color: white;
+	padding:32%;
+	margin: 0;
+	text-align: center;
+	z-index: 1;
+}
+
+#stars {
+	position: absolute;
+	left: 5%;
+	top: 0%;
+}
+
+.one h2{
+	position: absolute;
+	top: 40%;
+	left: 0;
+	padding-top:0%;
+	padding-bottom: 0%;
+}
+
+.two h2{
+	position: absolute;
+	top: 90%;
+	left: 2%;
+	display: inline-block;
+	min-height: 200px;
+	z-index: 1;
+	/*margin: auto;*/
+}
+
+#button {
+	position: absolute;
+	padding: 0;
+	top: 149.5%;
+	left: 56%;
+	color: red;
+	animation:1.5s pulse ease-in-out infinite;
+	display: inline-block;
+	min-height: 200px;
+	z-index: 2;
+	cursor:pointer;
+	/*margin: auto;*/
+}
+
+
+@keyframes pulse {
+		0% {
+			transform:scale(1);
+		}
+		50%{
+			transform:scale(0.9);
+		}
+		100%{
+			transform:scale(1);
+		}
+	}
+
+#para2 {
+	position: absolute;
+	top: 96%;
+	left: -2%;
+	display: block;
+	z-index: 1;
+}
+ 
+.three h2{
+	position: absolute;
+	top: 270%;
+	left: 0;
+	padding-bottom: 0;
+	padding-top: 0;
+	z-index: 5;
+	cursor:pointer;
+}
+
+.three h2:hover{
+	color: #F0EBD8;
+	text-shadow: 5px 3px 8px #F0EBD8;
+}
+
+#cloud img{
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+	top: 1400px;
+	left: -900px;
+	z-index: 4;
+	max-width:1900px;
+	animation: 8s slide linear infinite;
+}
+
+@keyframes slide {
+		0% {
+			transform:translateX(0px);
+		}
+		50%{
+			transform:translateX(100px);
+		}
+		100%{
+			transform:translateX(0px);
+		}
+	}
+
+#moon img {
+	width: 40%;
+	position: absolute;
+	top: 150px;
+	left: 30px;
+	animation: 10s rotate linear infinite;
+}
+
+#hourglass img {
+	width: 22%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	transform: rotate(340deg);
+	position: relative;
+	top: 200px;
+	left: 130px;
+	z-index: 3;
+}
+
+#stopwatch img{
+	width: 36%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	transform: rotate(340deg);
+	position: relative;
+	top: -500px;
+	left: 0px;
+	z-index: 2;
+/*	visibility: hidden;*/
+}
+
+@keyframes rotate {
+		0% {
+			transform:rotate(0deg);
+		}
+		50%{
+			transform:rotate(180deg);
+		}
+		100%{
+			transform:rotate(360deg);
+		}
+	}
+
+#gif {
+	position: relative;
+	left: -22%;
+	top: 30%;
+	display: none;
+	z-index: 3;}
+
+.end {
+	display: flex;
+	height: 15%;
+	color:black;
+	text-align:left;
+	border-radius:1em;
+	box-shadow: 0px 0px 20px #0D1321;
+	background-color: #748CAB;
+	z-index: 6;
+	position: relative;
+	top: 2000px;
+	left: 250px;
+	visibility: hidden;
+	cursor: pointer;
+/*	transition:0.5s ease-in-out;*/
+}
+
+#heaven h2{
+	width: 400px;
+	font-size: 50px;
+	margin: 0;
+	position: relative;
+	left: -50px;
+	top: -70px;
+}
+
+
+
+#def p{
+	width: 500px;
+	font-size: 23px;
+	margin: 0;
+	position: relative;
+	top: 200px;
+	left: -80px;
+}
+
+</style>
+
+<script>
+	
+gif = document.querySelector('#gif')
+button = document.querySelector('#button')
+stopwatch = document.querySelector('#stopwatch')
+hourglass = document.querySelector('#hourglass')
+end = document.querySelector('.end')
+three = document.querySelector('.three')
+
+
+button.onclick=function () { 
+	if (gif.style.display=='none'){gif.style.display='block'} else {
+		gif.style.display='none'}
+}
+
+hourglass.onmouseover=function() {
+	stopwatch.style.visibility='visible'
+	hourglass.style.opacity='0'
+	hourglass.style.bottom='-100vh'
+}
+
+hourglass.onmouseout=function() {
+	stopwatch.style.visibility='hidden'
+	hourglass.style.opacity='1'
+	hourglass.style.bottom='0'
+}
+
+three.onclick=function () { 
+	if (end.style.visibility=='hidden'){end.style.visibility='visible'} else {
+		end.style.visibility='hidden'}
+}
+
+end.onclick=function () {
+	end.style.visibility='hidden'
+}
+
+
+</script>
+
+</html>
