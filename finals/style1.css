@@ -1,0 +1,154 @@
+html, body{
+	height: 125%;
+	background-color: #EAE8E0; }
+
+#content-wrapper{
+    margin: 0 auto;
+    min-height: 1150px;
+    max-width: 650px ;
+}
+
+h1{
+font-size: 60px;
+  font-family: 'Bebas Neue', cursive;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #544B3D;
+  position: relative;
+}
+
+@keyframes title{
+	to { transform:scale(0.3);  }
+}
+
+.title{
+  position: relative;
+  top: 350px;
+  display: flex;
+  height: 650px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.title h1{
+	animation: 1.5s title linear ;
+	animation-play-state: paused;
+  	animation-delay: calc(var(--scroll) * -1s);
+	position: sticky;
+  position: -webkit-sticky;
+  top: 2rem;
+}
+
+
+.folder img{
+	width: 90px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 150px;
+	left: 280px;
+	cursor: pointer;
+	z-index: 3;
+}
+
+h2{
+	font-family: 'Playfair Display', serif;
+	font-size: 30px;
+	color: #E77432;
+}
+
+/*.archive div{
+margin: 0 auto;
+    display: flex;
+    width: 100%;
+}*/
+
+#one img  {
+	width: 150px;
+	position: relative;
+	top: -150px;
+	left: 600px;
+	z-index: 1;
+	cursor: pointer;
+	visibility: hidden;
+}
+#one h2{
+	font-size: 50px;
+	position: relative;
+	top: -200px;
+	left: 630px;
+	z-index: 2;
+	visibility: hidden;
+}
+
+#two img  {
+	width: 150px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	top: 20px;
+	left: 250px;
+	z-index: 1;
+	cursor: pointer;
+	visibility: hidden;
+}
+#two h2{
+	font-size: 50px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: -90px;
+	left: 150px;
+	z-index: 2;
+	visibility: hidden;
+}
+
+#three img  {
+	width: 150px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: -400px;
+	left: -150px;
+	z-index: 1;
+	cursor: pointer;
+	visibility: hidden;
+}
+#three h2{
+	margin: 0;
+	padding-right: 50%;
+	font-size: 50px;
+	position: relative;
+	top: -420px;
+	left: -150px;
+	z-index: 2;
+	visibility: hidden;
+}
+
+
+#four img  {
+	width: 150px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: -300px;
+	left: 680px;
+	z-index: 1;
+	cursor: pointer;
+	visibility: hidden;
+}
+#four h2{
+	margin: 0;
+	padding-right: 50%;
+	font-size: 50px;
+	position: relative;
+	top: -350px;
+	left: 780px;
+	z-index: 2;
+	visibility: hidden;
+}
+
+
+
+

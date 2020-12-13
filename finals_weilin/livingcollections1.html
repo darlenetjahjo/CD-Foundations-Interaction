@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Living Collection</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="content-wrapper">
+	<div>
+	<div class="title">
+		<h1>Darlene's Living Collection</h1>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	</div>
+
+	<div class="archive">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+		<div class="folder"><img src="assets/folder.png"></div>
+		<div class="thumbnail">
+			<div id="one">
+				<img class="one" src="assets/bwhouse.png">
+				<h2 id="textone">Light & Dark</h2>
+			</div>
+			<div id="two">
+				<img class="two" src="assets/svgandtype.jpg">
+				<h2 id="texttwo">Expressive Text</h2>
+			</div>
+			<a href="project1.html" style="text-decoration: none"><div id="three" style="height: 0px;width: 0px;">
+				<img class="three" src="assets/story.jpg">
+				<h2 id="textthree">Interactive Story</h2>
+			</div></a>
+			<div id="four" style="height: 0px;width: 0px;">
+				<img class="four" src="assets/cookie.jpg">
+				<h2 id="textfour">SVG & Type</h2>
+			</div>
+			<div id="five"></div>
+			<div id="six"></div>
+		</div>
+	</div>
+
+</body>
+</div>
+
+<script type="text/javascript">
+	
+let title = document.querySelector('.title')
+let	one = document.querySelector('.one')
+let	folder = document.querySelector('.folder')
+let textone = document.querySelector('#textone')
+let	two = document.querySelector('.two')
+let texttwo = document.querySelector('#texttwo')
+let	three = document.querySelector('.three')
+let textthree = document.querySelector('#textthree')
+let	four = document.querySelector('.four')
+let textfour = document.querySelector('#textfour')
+// let one = document.querySelector('#one')
+
+console.log (title)
+console.log	(one)
+console.log	(folder)
+console.log	(two)
+console.log	(texttwo)
+console.log	(textone)
+console.log	(textthree)
+console.log	(textfour)
+console.log	(three)
+console.log	(four)
+
+folder.onclick=function(){
+	if (one.style.visibility=='hidden'){one.style.visibility='visible'} else {
+		one.style.visibility='hidden'}
+		if (two.style.visibility=='hidden'){two.style.visibility='visible'} else {
+		two.style.visibility='hidden'}
+		if (three.style.visibility=='hidden'){three.style.visibility='visible'} else {
+		three.style.visibility='hidden'}
+		if (four.style.visibility=='hidden'){four.style.visibility='visible'} else {
+		four.style.visibility='hidden'} }
+one.onmouseover=function() {
+	textone.style.visibility='visible'
+	one.style.transform='scale(1.5)'}
+one.onmouseout=function() {
+	textone.style.visibility='hidden'
+	one.style.transform='scale(1)'}
+
+two.onmouseover=function() {
+	texttwo.style.visibility='visible'
+	two.style.transform='scale(1.5)'}
+two.onmouseout=function() {
+	texttwo.style.visibility='hidden'
+	two.style.transform='scale(1)'}
+
+three.onmouseover=function() {
+	textthree.style.visibility='visible'
+	three.style.transform='scale(1.5)'}
+three.onmouseout=function() {
+	textthree.style.visibility='hidden'
+	three.style.transform='scale(1)'}
+
+four.onmouseover=function() {
+	textfour.style.visibility='visible'
+	four.style.transform='scale(1.5)'}
+four.onmouseout=function() {
+	textfour.style.visibility='hidden'
+	four.style.transform='scale(1)'}
+
+window.addEventListener('scroll', () => {
+  document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+}, false); 
+
+</script>
+
+</html>
