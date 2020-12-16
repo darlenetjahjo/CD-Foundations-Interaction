@@ -141,7 +141,7 @@ h2 {
 video{
 	position: relative;
 	top: 32vh;
-	left: -6vw;
+	left: -1vw;
 	cursor: pointer;
 }
 
@@ -150,7 +150,7 @@ video{
 	line-height:18px;
 	width:40em;
 	position: relative;
-	top: 60vh;
+	top: 35vh;
 	left: -5vw;
 cursor: pointer;}
 .gist-data {max-height: 320px; max-width: 650px;}
@@ -163,7 +163,7 @@ cursor: pointer;}
 		scroll-snap-align: start;
 		position: relative;
 		left: 295vw;
-		top: -100vh;
+		top: -75vh;
 	}
 
 h4{
@@ -172,7 +172,7 @@ h4{
 	font-size: 50px;
 	text-align: center;
 	position: relative;
-	top: 24vh;
+	top: -1vh;
 	left: -42vw;
 	margin: 0;
 	transform:rotate(270deg);
@@ -184,7 +184,7 @@ h5{
 	font-size: 25px;
 	text-align: center;
 	position: relative;
-	top: -2vh;
+	top: -27vh;
 	left: -1vw;
 	margin: 0;
 	visibility: hidden;
@@ -198,7 +198,7 @@ h5{
 		scroll-snap-align: start;
 		position: relative;
 		left: 395vw;
-		top: -140vh;
+		top: -130vh;
 	}
 
 h6{
@@ -207,7 +207,7 @@ h6{
 	font-size: 30px;
 	text-align: center;
 	position: relative;
-	top: 52vh;
+	top: 50vh;
 	left: -18vw;
 	cursor: pointer;
 	margin: 0;

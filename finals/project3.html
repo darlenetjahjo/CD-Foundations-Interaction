@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Interactive Story</title>
+	<link rel="stylesheet" type="text/css" href="style4.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="content-wrapper">
+	<div>
+		<h3>Living Collection</h3>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	</div>
+
+	<div class="nav"><img id="right" src="assets/right.svg"><img id="left" src="assets/left.svg"></div>
+
+	<a href="livingcollections1.html">
+		<div class="back"><img src="assets/folder.png"></div>
+	</a>
+
+	<div class="pages">
+		<div id="page1">
+			<h1>SVG & Type</h1>
+			<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap"
+				rel="stylesheet">
+		</div>
+
+		<div id="page2" style="height: 80px;width: 980px;">
+			<h2>This project is a digital adaptation of Jorge Luis Borges’ “His End And His Beggining”. Using a
+				combination of HTML, CSS & Javascript, the three paragraphs within the story is cut up into three
+				chapters: nightmare, truth and realization, themes that can be found throughout.</h2>
+			<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap" rel="stylesheet">
+		</div>
+
+		<div id="page3">
+			<video width="60%" height="auto" controls>
+				<source src="assets/svgtype.mp4" type="video/mp4"></video>
+		</div>
+
+		<div id="page4" style="height: 80px;width: 980px;">
+			<img src="assets/svgtype.png" width="60%">
+			<div id="circle1"><img src="assets/circle.png" width="13%"><h5 id="scroll">Blur on hover was used to indicate the wrong cookie</h5></div>
+			<div id="rectangle"><img src="assets/rectangle.png" width="42%"><p id="detailone">Title is positioned as a sticky</p></div>
+			<h4>Details</h4>
+		</div>
+
+		<div id="page5" style="height: 80px;width: 980px;"><a
+				href="https://darlenetjahjo.github.io/cd-ixd/week7/typeandsvg.html" style="text-decoration: none">
+				<h6>https://darlenetjahjo.github.io/cd-ixd/week7/typeandsvg.html</h6>
+			</a></div>
+
+	</div>
+
+	<div id='selector'>
+		<div class='option' id='option1'></div>
+		<div class='option' id='option2'></div>
+		<div class='option' id='option3'></div>
+		<div class='option' id='option4'></div>
+		<div class='option' id='option5'></div>
+	</div>
+
+</body>
+
+<script type="text/javascript">
+
+	var element_number = 1;
+	let options = document.querySelectorAll('.option')
+	page1 = document.querySelector('#page1')
+	page2 = document.querySelector('#page2')
+	page3 = document.querySelector('#page3')
+	page4 = document.querySelector('#page4')
+	circle = document.querySelector('#circle1')
+	scroll = document.querySelector('#scroll')
+	rectangle = document.querySelector('#rectangle')
+	detailone = document.querySelector('#detailone')
+	let right = document.querySelector('#right')
+	let left = document.querySelector('#left')
+	console.log(right)
+	console.log(left)
+
+	circle.onmouseover = function () {
+		scroll.style.visibility = 'visible'
+	}
+
+	circle.onmouseout = function () {
+		scroll.style.visibility = 'hidden'
+	}
+
+	rectangle.onmouseover = function () {
+		detailone.style.visibility = 'visible'
+	}
+
+	rectangle.onmouseout = function () {
+		detailone.style.visibility = 'hidden'
+	}
+
+	right.onclick = function () {
+		if (element_number == 5) {
+			element_number = 1
+		}
+		else {
+			element_number += 1
+		}
+		console.log('element number is ' + element_number)
+		element = document.querySelector('#page' + element_number.toString())
+		element.scrollIntoView({
+			behavior: "smooth"
+		})
+
+	}
+
+	left.onclick = function () {
+		if (element_number == 1) {
+			element_number = 5
+		}
+		else {
+			element_number -= 1
+		}
+		console.log('element number is ' + element_number)
+		element = document.querySelector('#page' + element_number.toString())
+		element.scrollIntoView({
+			behavior: "smooth"
+		})
+
+	}
+
+	options.forEach(item => {
+
+		item.onclick = function () {
+			id = item.id
+			console.log(id)
+			split = id.split('option')
+			console.log(split)
+			element_number = split[1]
+			console.log(element_number)
+			console.log('click')
+			element = document.querySelector('#page' + element_number)
+			element.scrollIntoView({
+				behavior: "smooth"
+			})
+		}
+	}
+	)
+
+
+
+</script>
+
+</html>
