@@ -14,6 +14,7 @@
 			<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 		</div>
 
+
 		<div class="archive">
 			<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap"
 				rel="stylesheet">
@@ -37,9 +38,14 @@
 					<img class="four" src="assets/cookie.jpg">
 					<h2 id="textfour">SVG & Type</h2>
 				</div></a>
-				<div id="five"></div>
-				<div id="six"></div>
+				<a href="project4.html" style="text-decoration: none"><div id="five" style="height: 0px;width: 0px;">
+					<img class="five" src="assets/ulec.png">
+					<h2 id="textfive">Modern Mythology</h2>
+				</div></a>
+				<div id="six"><img class="six" src="assets/potato.png"> <h2 id="textsix">Figma Workshop</h2></div>
 			</div>
+			<div id="access"><img class="access" src="assets/denied.png"></div>
+			<div id="access2"><img class="access2" src="assets/denied.png"></div>
 		</div>
 
 </body>
@@ -57,7 +63,12 @@
 	let textthree = document.querySelector('#textthree')
 	let four = document.querySelector('.four')
 	let textfour = document.querySelector('#textfour')
-	// let one = document.querySelector('#one')
+	let five = document.querySelector('.five')
+	let textfive = document.querySelector('#textfive')
+	let six = document.querySelector('.six')
+	let textsix = document.querySelector('#textsix')
+	let access = document.querySelector('.access')
+	let access2 = document.querySelector('.access2')
 
 	console.log(title)
 	console.log(one)
@@ -69,6 +80,12 @@
 	console.log(textfour)
 	console.log(three)
 	console.log(four)
+	console.log(five)
+	console.log(textfive)
+	console.log(six)
+	console.log(textsix)
+	console.log(access)
+	console.log(access2)
 
 	folder.onclick = function () {
 		if (one.style.visibility == 'hidden') { one.style.visibility = 'visible' } else {
@@ -83,7 +100,13 @@
 		if (four.style.visibility == 'hidden') { four.style.visibility = 'visible' } else {
 			four.style.visibility = 'hidden'
 		}
-	}
+		if (five.style.visibility == 'hidden') { five.style.visibility = 'visible' } else {
+			five.style.visibility = 'hidden'}
+		
+		if (six.style.visibility == 'hidden') { six.style.visibility = 'visible' } else {
+			six.style.visibility = 'hidden'}
+		}
+	
 	one.onmouseover = function () {
 		textone.style.visibility = 'visible'
 		one.style.transform = 'scale(1.5)'
@@ -119,6 +142,35 @@
 		textfour.style.visibility = 'hidden'
 		four.style.transform = 'scale(1)'
 	}
+
+	five.onmouseover = function () {
+		textfive.style.visibility = 'visible'
+		five.style.transform = 'scale(1.5)'
+	}
+	five.onmouseout = function () {
+		textfive.style.visibility = 'hidden'
+		five.style.transform = 'scale(1)'
+	}
+
+	six.onmouseover = function () {
+		textsix.style.visibility = 'visible'
+		six.style.transform = 'scale(1.5)'
+	}
+	six.onmouseout = function () {
+		textsix.style.visibility = 'hidden'
+		six.style.transform = 'scale(1)'
+	}
+
+two.onclick=function()
+{texttwo.innerHTML='Access Denied'
+if (access.style.visibility == 'hidden') { access.style.visibility = 'visible' } else {
+			access.style.visibility = 'hidden'}
+}
+
+six.onclick=function()
+{textsix.innerHTML='Access Denied'
+if (access2.style.visibility == 'hidden') { access2.style.visibility = 'visible' } else {
+			access2.style.visibility = 'hidden'}}
 
 	window.addEventListener('scroll', () => {
 		document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));

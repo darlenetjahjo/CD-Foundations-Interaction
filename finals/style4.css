@@ -3,7 +3,7 @@ html, body{
 	width: 100%;
 	height: auto;
 	overflow-y: hidden;
-/*	overflow-x: hidden;*/
+	overflow-x: hidden;
 }
 
 #content-wrapper{
@@ -28,6 +28,7 @@ h3{
 	top:40px;
 	display: inline-block;
 	z-index: 3;
+	cursor: pointer;
 }
 
 .back img:hover{
@@ -146,7 +147,7 @@ video{
 
 #page4 img{
 	position: relative;
-	top: 32vh;
+	top: 37vh;
 	left: -2vw;
 }
 
@@ -156,7 +157,7 @@ h4{
 	font-size: 50px;
 	text-align: center;
 	position: relative;
-	top: -60vh;
+	top: -49vh;
 	left: -38vw;
 	margin: 0;
 	transform:rotate(270deg);
@@ -164,7 +165,7 @@ h4{
 
 #circle1 img{
 	position: relative;
-	top: -11vh;
+	top: -6vh;
 	left: 26vw;
 	opacity: 0;
 	cursor: pointer;
@@ -173,7 +174,7 @@ h4{
 
 #rectangle img{
 	position: relative;
-	top: -32vh;
+	top: -27vh;
 	left: 4vw;
 	cursor: pointer;
 	opacity: 0;
@@ -181,7 +182,7 @@ h4{
 
 p{
 	position: relative;
-	top: -15vh;
+	top: -5vh;
 	left: -17vw;
 	font-family: 'Barlow', sans-serif;
 	color: #544B3D;
@@ -198,7 +199,7 @@ h5{
 	text-align: left;
 	padding-right: 90%;
 	position: relative;
-	top: -33vh;
+	top: -12vh;
 	left: 40vw;
 	margin: 0;
 	visibility: hidden;
@@ -221,7 +222,7 @@ h6{
 	font-size: 30px;
 	text-align: center;
 	position: relative;
-	top: 50vh;
+	top: 58vh;
 	left: -18vw;
 	cursor: pointer;
 	margin: 0;
@@ -231,3 +232,41 @@ h6{
 h6:hover{
 	color: #544B3D;
 }
+
+#nav1 img{
+	position: fixed;
+	left: 80vw;
+	top: 5.5vh;
+	width: 6%;
+	cursor: pointer;
+	visibility: hidden;
+}
+
+#nav2 img{
+	position: fixed;
+	left: 70vw;
+	top: 5.5vh;
+	width: 6%;
+	cursor: pointer;
+	visibility: hidden;
+}
+
+#nav3 img{
+	position: fixed;
+	left: 60vw;
+	top: 5.5vh;
+	width: 6%;
+	cursor: pointer;
+	visibility: hidden;
+}
+
+#nav1 img:hover{
+	transform: scale(1.2)
+}
+#nav2 img:hover{
+	transform: scale(1.2)
+}
+#nav3 img:hover{
+	transform: scale(1.2)
+}
+

@@ -9,15 +9,18 @@
 
 <body id="content-wrapper">
 	<div>
-		<h3>Living Collection</h3>
+		<a href="livingcollections1.html"><h3>Living Collection</h3></a>
 		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 	</div>
 
 	<div class="nav"><img id="right" src="assets/right.svg"><img id="left" src="assets/left.svg"></div>
+	<div class="navbar">
+			<a href="project3.html"><div id="nav1"><img class="nav1" src="assets/cookie.jpg"></div></a>
+			<a href="project1.html"><div id="nav2"><img class="nav2" src="assets/story.jpg"></div></a>
+			<a href="project4.html"><div id="nav3"><img class="nav3" src="assets/ulec.png"></div></a>
+		</div>
 
-	<a href="livingcollections1.html">
-		<div class="back"><img src="assets/folder.png"></div>
-	</a>
+		<div class="back"><img id="back" src="assets/folder.png"></div>
 
 	<div class="pages">
 		<div id="page1">
@@ -27,9 +30,7 @@
 		</div>
 
 		<div id="page2" style="height: 80px;width: 980px;">
-			<h2>This project is a digital adaptation of Jorge Luis Borges’ “His End And His Beggining”. Using a
-				combination of HTML, CSS & Javascript, the three paragraphs within the story is cut up into three
-				chapters: nightmare, truth and realization, themes that can be found throughout.</h2>
+			<h2>Light and dark mode showcases a website's duality through changes in color palettes. I chose to advertise a cabin rental company using a collage of random items that you would find in a tourism brochure provided in motels. The aesthetic is very gawky, taking heavy inspiration from infomercials. </h2>
 			<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap" rel="stylesheet">
 		</div>
 
@@ -70,7 +71,11 @@
 	page3 = document.querySelector('#page3')
 	page4 = document.querySelector('#page4')
 	code = document.querySelector('.gist')
+	one = document.querySelector('.nav1')
+	two = document.querySelector('.nav2')
+	three = document.querySelector('.nav3')
 	scroll = document.querySelector('#scroll')
+	back = document.querySelector('#back')
 	let right = document.querySelector('#right')
 	let left = document.querySelector('#left')
 	console.log(right)
@@ -132,7 +137,14 @@
 	}
 	)
 
-
+back.onclick = function () {
+		if (one.style.visibility == 'hidden') { one.style.visibility = 'visible' } else {
+			one.style.visibility = 'hidden'}
+			if (two.style.visibility == 'hidden') { two.style.visibility = 'visible' } else {
+			two.style.visibility = 'hidden'}
+			if (three.style.visibility == 'hidden') { three.style.visibility = 'visible' } else {
+			three.style.visibility = 'hidden'}
+		}
 
 </script>
 

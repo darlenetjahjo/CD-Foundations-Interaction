@@ -9,15 +9,19 @@
 
 <body id="content-wrapper">
 	<div>
-		<h3>Living Collection</h3>
+			<a href="livingcollections1.html"><h3>Living Collection</h3></a>
 		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 	</div>
 
 	<div class="nav"><img id="right" src="assets/right.svg"><img id="left" src="assets/left.svg"></div>
 
-	<a href="livingcollections1.html">
-		<div class="back"><img src="assets/folder.png"></div>
-	</a>
+	<div class="navbar">
+			<a href="project3.html"><div id="nav1"><img class="nav1" src="assets/cookie.jpg"></div></a>
+			<a href="project2.html"><div id="nav2"><img class="nav2" src="assets/bwhouse.png"></div></a>
+			<a href="project4.html"><div id="nav3"><img class="nav3" src="assets/ulec.png"></div></a>
+		</div>
+
+		<div class="back"><img id="back" src="assets/folder.png"></div>
 
 	<div class="pages">
 		<div id="page1">
@@ -27,9 +31,7 @@
 		</div>
 
 		<div id="page2" style="height: 80px;width: 980px;">
-			<h2>This project is a digital adaptation of Jorge Luis Borges’ “His End And His Beggining”. Using a
-				combination of HTML, CSS & Javascript, the three paragraphs within the story is cut up into three
-				chapters: nightmare, truth and realization, themes that can be found throughout.</h2>
+			<h2>This project is a digital adaptation of Jorge Luis Borges’ “His End And His Beginning”. It breaks down the paragraphs into three different chapters: nightmare, truth & realization. These chapters are then made into different pages so viewers are able to read them separately or all together. The website itself is interactive and consists of animations, hover states and quiery input.</h2>
 			<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap" rel="stylesheet">
 		</div>
 
@@ -71,6 +73,10 @@
 	page4 = document.querySelector('#page4')
 	code = document.querySelector('.gist')
 	scroll = document.querySelector('#scroll')
+	one = document.querySelector('.nav1')
+	two = document.querySelector('.nav2')
+	three = document.querySelector('.nav3')
+	back = document.querySelector('#back')
 	let right = document.querySelector('#right')
 	let left = document.querySelector('#left')
 	console.log(right)
@@ -132,6 +138,14 @@
 	}
 	)
 
+back.onclick = function () {
+		if (one.style.visibility == 'hidden') { one.style.visibility = 'visible' } else {
+			one.style.visibility = 'hidden'}
+			if (two.style.visibility == 'hidden') { two.style.visibility = 'visible' } else {
+			two.style.visibility = 'hidden'}
+			if (three.style.visibility == 'hidden') { three.style.visibility = 'visible' } else {
+			three.style.visibility = 'hidden'}
+		}
 
 
 </script>
