@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Roro Jonggrang</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="one">
+<div><h1>Roro Jonggrang</h1>
+<link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet"></div>
+
+<div><h2>A Javanese Mythology</h2><link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet"></div>
+
+<div><h3>If it were told in 2020</h3></div></div>
+
+<div class="two">
+	<div id="prince"><img src="assets/prince.png"></div>
+	<div id="princess"><img src="assets/princess.png"></div>
+	<h1 id="avatar1">Name Avatar 1</h1>
+	<h2 id="avatar2">Name Avatar 2</h2>
+	<h5>Once Upon A Time in Java, the prince was into Roro Jonggrang, the neighboring princess whose kingdom he recently defeated</h5>
+	<div class="text">
+		<div id="text1"><img class="text1" src="assets/text1.png"></div>
+		<div id="text2"><img class="text2" src="assets/text2.png"></div><h6 id="button">show text</h6>
+	</div>
+	<h3>But he wouldn't take no for an answer,so this was her proposal</h3>
+<div id="sticky"><img src="assets/sticky.png"></div>
+</div>
+
+<div class="three">
+	<div id="text3"><img class="text3" src="assets/text3.png"></div>
+	<h2>Why was he so confident?</h2>
+	<input placeholder="what's your guess?" type="text" name="guess">
+	<h4 id="result"></h4>
+</div>
+
+<div class="four">
+	<h1 id="four">They got to work and by the 999th temple Roro needed a sabotage plan</h1>
+	<div id="text4"><img class="text4" src="assets/text4.png"></div>
+	<div id="rooster"><img src="assets/rooster.png"></div>
+	<h3 id="new">New text received</h3>
+	<div id="text5"><img class="text5" src="assets/text5.png"></div>
+	<div id="text6"><img class="text6" src="assets/text6.png"></div>
+	<div class="princess2"><img src="assets/princess.png"></div>
+	<div class="stone"><img src="assets/stone.png"></div>
+	<h4>The prince couldn't take the L and proceeded to turn her into stone (using his dark magic ofcourse) and from there she became the 1000th temple</h4>
+	<h5>The End..Unfortunately</h5>
+</div>
+
+</body>
+
+<script type="text/javascript">
+	
+window.addEventListener('scroll', () => {
+  document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+}, false);
+
+text1 = document.querySelector('.text1')
+text2 = document.querySelector('.text2')
+button = document.querySelector('#button')
+shapeshifterone = document.querySelector('#avatar1')
+shapeshiftertwo = document.querySelector('#avatar2')
+guess=document.querySelector('input[name="guess"]')
+result = document.querySelector ('#result')
+four = document.querySelector('#four')
+text4 = document.querySelector('.text4')
+text5 = document.querySelector('.text5')
+text6 = document.querySelector('.text6')
+button2 = document.querySelector('#new')
+
+ shapeshifterone.onclick=function(){
+	shapeshifterone.innerHTML='Prince Bandung Bondowoso'
+	shapeshifterone.style.width='7em'
+	shapeshifterone.style.textAlign='center'
+}
+
+shapeshiftertwo.onclick=function(){
+	shapeshiftertwo.innerHTML='Princess Roro Jonggrang'
+	shapeshiftertwo.style.width='7em'
+	shapeshiftertwo.style.textAlign='center'
+	shapeshiftertwo.style.top='19em'
+}
+
+button.onclick=function() {
+	text1.style.visibility='visible'
+	text2.style.visibility='visible'
+	button.style.visibility='hidden'
+}
+
+button2.onclick=function() {
+	text5.style.visibility='visible'
+	text6.style.visibility='visible'
+	button2.style.visibility='hidden'
+}
+
+guess.onchange=function(){
+	if (guess.value=='ghosts') {
+		result.innerHTML="How'd you know? He does have a gang of ghosts on call"
+	} else {
+		result.innerHTML="He actually has a gang of ghosts on call"
+	}
+}
+
+four.onclick=function() {
+	text4.style.visibility='visible'
+}
+
+
+</script>
+</html>
+
+
+
+
+
+
+
+

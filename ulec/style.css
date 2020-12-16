@@ -1,0 +1,342 @@
+html,	body{
+	background-image: linear-gradient(black,#44454E, #96B5B8, #E9E7D1);
+	height:300%;
+	width: 100%;
+	overflow-x: hidden;
+	margin: 0;
+/*	display: flex;*/
+}
+
+.one h1{
+	text-align: center;
+	position: relative;
+	top: 45vh;
+	left: 0vw;
+	font-family: 'Langar', cursive;
+	font-size: 50px;
+	color: gold;
+	z-index: 2;
+}
+
+.one h2{
+	text-align: center;
+	position: relative;
+	top: 40vh;
+	left: 0vw;
+	font-family: 'Lora', serif;
+	font-size: 20px;
+	color: white;
+}
+
+.one h3{
+	text-align: center;
+	position: relative;
+	top: 80vh;
+	left: 70vw;
+	font-family: 'Lora', serif;
+	font-size: 30px;
+	color: white;
+	animation: 0.2s one linear;
+	animation-play-state: paused;
+  	animation-delay: calc(var(--scroll) * -1s);
+}
+
+@keyframes one {
+  to { transform: translateX(-2000px); }
+}
+
+#prince img{
+	width: 22%;
+	position: relative;
+	top: 108vh;
+	left: 15vw;
+}
+
+#princess img{
+	width: 22%;
+	position: relative;
+	top: 70vh;
+	left: 60vw;
+}
+
+.two h1{
+	font-family: helvetica;
+	font-size: 25px;
+	color: white;
+	position: relative;
+	top: 70vh;
+	left: 20vw;
+	margin: 0;
+	cursor: pointer;
+}
+
+.two h1:hover{
+color: gold;
+}
+
+.two h2{
+	font-family: helvetica;
+	font-size: 25px;
+	color: white;
+	position: relative;
+	top: 64vh;
+	left: 65vw; 
+	cursor: pointer;
+}
+
+.two h2:hover{
+color: gold;
+}
+
+.two h5{
+	position: relative;
+	top: 60vh;
+	left: 0vw;
+	text-align: center;
+	font-family: 'Langar', cursive;
+	font-size: 23px;
+	padding: 30%;
+	color: #96B5B8;
+}
+
+#text1 img{
+	width:15%;
+	position: relative;
+	top: 40vh;
+	left: 18vw;
+	visibility: hidden;
+}
+
+#text2 img{
+	width:25%;
+	position: relative;
+	top: 50vh;
+	left: 60vw;
+	visibility: hidden;
+}
+
+.text h6{
+	font-family: helvetica;
+	font-size: 25px;
+	color: white;
+	position: relative;
+	left:44vw;
+	top: 25vh;
+	width: 10vw;
+	text-align: center;
+	background-color: gray;
+	margin: 0;
+	width: 12%;
+	border-radius: 1em;
+	cursor: pointer;
+	z-index: 3;
+}
+
+.text h6:hover{
+	opacity: 50%;
+}
+
+.two h3{
+	position: relative;
+	top: 20vh;
+	left: 0vw;
+	text-align: center;
+	font-family: 'Langar', cursive;
+	font-size: 23px;
+	padding: 35%;
+	color: #96B5B8;
+}
+
+#sticky img{
+	width: 8%;
+	position: relative;
+	left: 46vw;
+	top: -45vh;
+	cursor: pointer;
+}
+
+#sticky img:hover{
+	transform: scale(4.1);
+}
+
+.three h2{
+	font-family: 'Lora', serif;
+	font-weight: lighter;
+	font-size: 25px;
+	color: white;
+	text-align: center; 
+	cursor: pointer;
+	position: relative;
+	top: 20vh;
+}
+
+input{
+	font-family: 'Lora', serif;
+	font-size: 18px;
+	text-align: center;
+	position: relative;
+	top: 20vh;
+	left: 38vw;
+	width: 25%;
+	z-index: 4;
+}
+
+#text3 img{
+	width:10%;
+	position: relative;
+	top: -10vh;
+	left: -10vw;
+	animation: 0.3s two linear infinite;
+	animation-play-state: paused;
+  	animation-delay: calc(var(--scroll) * -1s);
+}
+
+@keyframes two {
+  to { transform: translateX(100vw); }
+}
+
+.three h4{
+position: relative;
+	top: 20vh;
+	left: 1vw;
+	text-align: center;
+	font-family: 'Langar', cursive;
+	font-size: 28px;
+}
+
+.four h1{
+	font-family: 'Lora', serif;
+	font-weight: lighter;
+	font-size: 25px;
+	color: white;
+	text-align: left; 
+	cursor: pointer;
+	position: relative;
+	top: 70vh;
+	left: 18vw;
+	padding-right:80%; 
+	animation: pulse infinite 1.5s;
+}
+.four h1:hover{
+	color: lightyellow
+}
+
+@keyframes pulse{
+	0% {transform: scale(1)}
+	50%{transform: scale(1.05)}
+	100%{transform: scale(1)}
+}
+
+#text4 img{
+	width:30%;
+	position: relative;
+	top: 55vh;
+	left: 60vw;
+	visibility: hidden;
+}
+
+#rooster img{
+	width: 120%;
+	position: relative;
+	left: -50vw;
+	top: 100vh;
+	transform:rotate(-20deg);
+	animation: move infinite 2s;
+}
+
+@keyframes move{
+	0% {transform: rotate(0deg)}
+	30%{transform: rotate(10deg)}
+	50%{transform: rotate(0deg)}
+	70%{transform: rotate(-10deg)}
+	100%{transform: rotate(0deg);}
+}
+
+#text5 img{
+	width:20%;
+	position: relative;
+	top: 80vh;
+	left: 20vw;
+	visibility: hidden;
+}
+
+#text6 img{
+	width:18%;
+	position: relative;
+	top: 85vh;
+	left: 65vw;
+	visibility: hidden;
+}
+
+.four h4{
+	font-family: 'Lora', serif;
+	font-weight: lighter;
+	font-size: 25px;
+	color: white;
+	text-align: center; 
+	cursor: pointer;
+	position: relative;
+	top: -15vh;
+	padding: 28%;
+	color: #44454E;
+}
+
+.four h3{
+	font-family: helvetica;
+	font-size: 25px;
+	color: white;
+	position: relative;
+	left:44vw;
+	top: 100vh;
+	width: 10vw;
+	text-align: center;
+	background-color: gray;
+	margin: 0;
+	width: 12%;
+	border-radius: 1em;
+	cursor: pointer;
+	z-index: 5;
+}
+
+.four h3:hover{
+	opacity: 50%;
+}
+
+.princess2 img{
+	width: 22%;
+	position: relative;
+	top: 150vh;
+	left: 40vw;
+	z-index: 3
+}
+
+.princess2 img:hover{
+visibility: hidden
+}
+
+.stone img{
+	width: 22%;
+	position: relative;
+	top: 111.5vh;
+	left: 40vw;
+}
+
+.four h5{
+	position: relative;
+	top: 10vh;
+	text-align: center;
+	font-family: 'Langar', cursive;
+	font-size: 35px;
+	color: #44454E;
+}
+
+
+
+
+
+
+
+
+
+
+
